@@ -3,10 +3,23 @@
 @media (min-width: 640px) {
 }
 @media (min-width: 768px) {
+  .hero-form {
+    input {
+      width: 456px;
+    }
+  }
 }
 @media (min-width: 992px) {
+  .menu {
+    display: none !important;
+  }
   .navlist-container {
     display: flex !important;
+  }
+
+  .hero-form {
+    flex-direction: row !important;
+    gap: 0 !important;
   }
 }
 @media (min-width: 1200px) {

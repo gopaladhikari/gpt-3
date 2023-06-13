@@ -1,0 +1,50 @@
+@import "variables";
+
+.possiblity {
+  margin: 10rem auto;
+  background-color: $tertiary-color;
+
+  padding: 2em 6em;
+
+  .wrapper1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7em;
+
+    h1 {
+      font-size: 34px;
+      max-width: 472px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  h2 {
+    font-size: $secondary-fs;
+    white-space: nowrap;
+  }
+
+  p {
+    max-width: 731px;
+  }
+
+  .list {
+    margin-top: 6rem;
+    display: flex;
+
+    h3 {
+      margin-bottom: 2.5rem;
+    }
+
+    img {
+      margin: 1rem 0;
+    }
+  }
+}

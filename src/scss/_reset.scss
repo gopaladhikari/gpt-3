@@ -1,0 +1,33 @@
+@import "variables";
+
+h1,
+h2 {
+  font-size: 62px;
+  background: $primary-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.04em;
+  font-weight: $primary-weight;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: $md-fs;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+p {
+  font-size: $tertiary-fs;
+  color: $secondary-color;
+}

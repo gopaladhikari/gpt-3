@@ -7,46 +7,51 @@
   max-width: 1440px;
   margin: 0 auto;
 
-  .logo {
-    object-fit: contain;
-    width: 62.56px;
-    height: 16.02px;
-  }
-
-  .navlist-container {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-
-    a {
-      text-decoration: none;
-      font-size: $md-fs;
-    }
-  }
-
   .navbar-brand {
     display: flex;
-    gap: 1rem;
     align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+    .logo {
+      object-fit: contain;
+      width: 62.56px;
+      height: 16.02px;
+    }
+
+    .navlist-container {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: $md-fs;
+        color: white;
+      }
+    }
   }
 }
 
-.button-group {
-  display: flex;
-  gap: 1.5rem;
+.navbar {
+  .button-group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
 
-  button {
-    cursor: pointer;
-  }
+    button {
+      cursor: pointer;
+    }
 
-  .sign-up {
-    background-color: $button-color;
-    padding: 10px 2rem;
-    border-radius: 5px;
-    transition: all 200ms;
+    .sign-up {
+      background-color: $button-color;
+      padding: 5px 1rem;
+      border-radius: 5px;
+      transition: all 200ms;
 
-    &:hover {
-      background-color: $button-hover-color;
+      &:hover {
+        background-color: $button-hover-color;
+      }
     }
   }
 }
