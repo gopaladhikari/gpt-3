@@ -1,6 +1,10 @@
-import { navLinks } from "../constants";
-import { heroImages } from "../constants";
-import { posibiltySection } from "../constants";
+import {
+  footerLinks,
+  navLinks,
+  heroImages,
+  posibiltySection,
+} from "../constants";
+
 const navbar = document.getElementById("navlist-container") as HTMLElement;
 const possiblityList = document.getElementById(
   "possiblity-list"
@@ -8,6 +12,12 @@ const possiblityList = document.getElementById(
 const heroImagesContainer = document.getElementById(
   "hero-images-container"
 ) as HTMLElement;
+
+const footerLink = document.getElementById(
+  "footer-links-wrapper"
+) as HTMLElement;
+
+const yearEl = document.getElementById("year") as HTMLElement;
 
 const generateNavLinks = (): void => {
   navbar.innerHTML += navLinks
@@ -37,6 +47,30 @@ const generatePossibilityData = (): void => {
     .join("");
 };
 
+const generateFooterLinks = (): void => {
+  footerLink.innerHTML += footerLinks
+    .map(
+      ({ title, links }: { title: string; links: string[] }) =>
+        `<div>
+         <h4> ${title}  </h4>
+         <ul>
+          ${links.map((link: string) => ` <li>${link}</li> `).join("")}
+        </ul>
+      </div>
+`
+    )
+    .join("");
+};
+
+const generateYearLinks = (): void => {
+  const date = new Date();
+  const thisyear = date.getFullYear();
+  yearEl.innerText = thisyear.toString();
+};
+
 generateNavLinks();
 generateHeroImages();
 generatePossibilityData();
+generateFooterLinks();
+generateYearLinks();
+// alert("This website is not responsive");

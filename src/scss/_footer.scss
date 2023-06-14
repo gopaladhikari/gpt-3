@@ -1,0 +1,45 @@
+@import "variables";
+
+.footer-wrapper {
+  margin-top: 5rem;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 118px;
+    height: 30px;
+  }
+  p {
+    margin-top: 1rem;
+    color: white;
+    font-size: 12px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-basis: 70%;
+    justify-content: space-between;
+
+    h4 {
+      font-family: "Gilroy-Bold";
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      margin-bottom: 1.5em;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}
+.footer-para {
+  padding: 1em;
+  text-align: center;
+  color: white;
+}

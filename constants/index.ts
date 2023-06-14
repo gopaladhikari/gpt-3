@@ -41,3 +41,22 @@ export const posibiltySection = [
       "At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b",
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Links",
+    links: ["Overans", "Social Media", "Counters", "Contact"],
+  },
+  {
+    title: "Company",
+    links: ["Terms & Conditions", "Privacy Policy", "Contact"],
+  },
+  {
+    title: "Get in touch",
+    links: [
+      "Crechterwoord K12 182 DK Alknjkcb",
+      "085-132567",
+      "info@payme.net",
+    ],
+  },
+];
