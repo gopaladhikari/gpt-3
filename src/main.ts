@@ -73,4 +73,4 @@ generateHeroImages();
 generatePossibilityData();
 generateFooterLinks();
 generateYearLinks();
-// alert("This website is not responsive");
+alert("This website is not responsive");
